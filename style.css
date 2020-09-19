@@ -58,123 +58,71 @@ header{
     background: rgb(192,57,43);
 }
 
-.textContainer{
-    text-align: center;
-    margin-top: 7vw;
-    font-size: 23px;
+.wrapper{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    margin-top: 1em;
 }
 
+.textContainer{
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.textContainer h3{
+    font-size: 23px; 
+}
+
+/* FORM STYLING */
+
 .container{
-    width: 32%;
-    height: 22vw;
+    width: 27em;
+    height: 16em;
     background: white;
+    border: 1px solid gainsboro;
     margin: 0 auto;
-    margin-top: 20px;
 }
 
 form{
-    margin-left: 2vw;
-    padding-top: 1vw;
+    padding: 1em;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
 }
 
-.inputContainer p{
-    padding-top: 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 10px;
-    font-size: 15px;
+form .user{
+    margin-bottom: 0.5em;
 }
 
-.inputContainer:nth-child(2) p{
-    padding-top: 15px;
+form .pass{
+    margin-bottom: 0.5em;
+    margin-top: 1em;
 }
 
+label{
+    margin-top: 1em;
+    font-size: 13px;
+}
 
-.inputContainer input{
+input{
     padding: 5px;
-    margin-left: 10px;
-    margin-top: 5px;
-    padding-left: 10px;
-    padding-right: 200px;
+    border-radius: 4px;
+    border: 1px solid rgba(158, 156, 156, 0.452);
+    padding-left: 1em;
+    padding-right: 14em;
+    margin-bottom: 2px;
 }
 
 button{
-    padding: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding-left: 175px;
-    padding-right: 175px;
-    background: #62cb31;
+    padding: 8px;
+    margin-top: 1em;
+    width: 28em;
+    border-radius: 3px;
     border: 0;
+    background: #62cb31;
     color: white;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-.phoneResponsive{
-    display: none;
-}
 
-@media  screen and (max-width: 1030px){
-    .container{
-        display: none;
-    }
-
-    .phoneResponsive{
-        display: block;
-        width: 45vw;
-        height: 52vh;
-        background: white;
-        margin-left: 27%;
-        margin-top: 20px;
-    }
-}
-
-@media  screen and (max-width: 768px){
-    .phoneResponsive{
-        width: 56vw;
-        margin-left: 20%;
-    }
-}
-
-@media  screen and (max-width: 425px){
-    .phoneResponsive{
-        margin-left: 10px;
-        width: 96vw;
-    }
-}
-
-@media  screen and (max-width: 375px){
-    .phoneResponsive{
-        margin-left: 10px;
-        width: 96vw;
-    }
-
-    .phoneResponsive input{
-        padding-right: 130px;
-    }
-
-    .phoneResponsive button{
-        padding-left: 143px;
-        padding-right:143px;
-    }
-}
-
-@media  screen and (max-width: 320px){
-    .phoneResponsive{
-        margin-left: 10px;
-        width: 96vw;
-    }
-
-    .phoneResponsive input{
-        padding-right: 100px;
-    }
-
-    .phoneResponsive button{
-        padding-left: 125px;
-        padding-right: 125px;
-    }
-    .textContainer{
-        font-size: 20px;
-    }
-        
-}
+/* LARGE SCREEN */
